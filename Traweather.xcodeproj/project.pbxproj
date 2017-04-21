@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A04E8AE1EA9601300E6D597 /* locationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04E8AD1EA9601300E6D597 /* locationSearchTable.swift */; };
+		4A4BDDAE1EA9459900138E01 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4BDDAD1EA9459900138E01 /* icon.png */; };
 		4A754C731EA93BFC00749758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A754C721EA93BFC00749758 /* AppDelegate.swift */; };
 		4A754C751EA93BFC00749758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A754C741EA93BFC00749758 /* ViewController.swift */; };
 		4A754C781EA93BFC00749758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A754C761EA93BFC00749758 /* Main.storyboard */; };
 		4A754C7A1EA93BFC00749758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A754C791EA93BFC00749758 /* Assets.xcassets */; };
 		4A754C7D1EA93BFC00749758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A754C7B1EA93BFC00749758 /* LaunchScreen.storyboard */; };
+		4AB93B691EA994EB00FD3CD2 /* font-awesome_4-7-0_cloud_60_0_007dff_none.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB93B681EA994EB00FD3CD2 /* font-awesome_4-7-0_cloud_60_0_007dff_none.png */; };
+		4AC2D0531EA99FFC0089D4FC /* comfirmTravelPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2D0521EA99FFC0089D4FC /* comfirmTravelPlace.swift */; };
+		4AC2D0551EA9AE7B0089D4FC /* travelPlaceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2D0541EA9AE7B0089D4FC /* travelPlaceStore.swift */; };
+		4AC2D0571EA9AEA60089D4FC /* travelPlaceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2D0561EA9AEA60089D4FC /* travelPlaceItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A04E8AD1EA9601300E6D597 /* locationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationSearchTable.swift; sourceTree = "<group>"; };
+		4A4BDDAD1EA9459900138E01 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4A754C6F1EA93BFC00749758 /* Traweather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traweather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A754C721EA93BFC00749758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A754C741EA93BFC00749758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		4A754C791EA93BFC00749758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A754C7C1EA93BFC00749758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A754C7E1EA93BFC00749758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AB93B681EA994EB00FD3CD2 /* font-awesome_4-7-0_cloud_60_0_007dff_none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "font-awesome_4-7-0_cloud_60_0_007dff_none.png"; sourceTree = "<group>"; };
+		4AC2D0521EA99FFC0089D4FC /* comfirmTravelPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = comfirmTravelPlace.swift; path = ../comfirmTravelPlace.swift; sourceTree = "<group>"; };
+		4AC2D0541EA9AE7B0089D4FC /* travelPlaceStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = travelPlaceStore.swift; sourceTree = "<group>"; };
+		4AC2D0561EA9AEA60089D4FC /* travelPlaceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = travelPlaceItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +66,18 @@
 		4A754C711EA93BFC00749758 /* Traweather */ = {
 			isa = PBXGroup;
 			children = (
+				4AC2D0521EA99FFC0089D4FC /* comfirmTravelPlace.swift */,
 				4A754C721EA93BFC00749758 /* AppDelegate.swift */,
 				4A754C741EA93BFC00749758 /* ViewController.swift */,
 				4A754C761EA93BFC00749758 /* Main.storyboard */,
+				4A04E8AD1EA9601300E6D597 /* locationSearchTable.swift */,
+				4A4BDDAD1EA9459900138E01 /* icon.png */,
 				4A754C791EA93BFC00749758 /* Assets.xcassets */,
+				4AB93B681EA994EB00FD3CD2 /* font-awesome_4-7-0_cloud_60_0_007dff_none.png */,
 				4A754C7B1EA93BFC00749758 /* LaunchScreen.storyboard */,
 				4A754C7E1EA93BFC00749758 /* Info.plist */,
+				4AC2D0541EA9AE7B0089D4FC /* travelPlaceStore.swift */,
+				4AC2D0561EA9AEA60089D4FC /* travelPlaceItem.swift */,
 			);
 			path = Traweather;
 			sourceTree = "<group>";
@@ -124,7 +142,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4BDDAE1EA9459900138E01 /* icon.png in Resources */,
 				4A754C7D1EA93BFC00749758 /* LaunchScreen.storyboard in Resources */,
+				4AB93B691EA994EB00FD3CD2 /* font-awesome_4-7-0_cloud_60_0_007dff_none.png in Resources */,
 				4A754C7A1EA93BFC00749758 /* Assets.xcassets in Resources */,
 				4A754C781EA93BFC00749758 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +159,10 @@
 			files = (
 				4A754C751EA93BFC00749758 /* ViewController.swift in Sources */,
 				4A754C731EA93BFC00749758 /* AppDelegate.swift in Sources */,
+				4AC2D0571EA9AEA60089D4FC /* travelPlaceItem.swift in Sources */,
+				4AC2D0551EA9AE7B0089D4FC /* travelPlaceStore.swift in Sources */,
+				4A04E8AE1EA9601300E6D597 /* locationSearchTable.swift in Sources */,
+				4AC2D0531EA99FFC0089D4FC /* comfirmTravelPlace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = GQ4WXJ899L;
 				INFOPLIST_FILE = Traweather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -274,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = GQ4WXJ899L;
 				INFOPLIST_FILE = Traweather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -302,6 +328,7 @@
 				4A754C831EA93BFC00749758 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
