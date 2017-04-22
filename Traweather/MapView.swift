@@ -14,7 +14,7 @@ protocol HandleMapSearch {
     func dropPinZoomIn(placemark:MKPlacemark)
 }
 
-class ViewController : UIViewController , HandleMapSearch {
+class MapView : UIViewController , HandleMapSearch {
     func dropPinZoomIn(placemark: MKPlacemark) {
         // cache the pin
         selectedPin = placemark
@@ -32,6 +32,7 @@ class ViewController : UIViewController , HandleMapSearch {
         let region = MKCoordinateRegionMake(placemark.coordinate, span)
         mapView.setRegion(region, animated: true)
     }
+        var travelPlaceStore:TravelPlaceStore!
     
     let locationManager:CLLocationManager = CLLocationManager()
     
@@ -39,8 +40,12 @@ class ViewController : UIViewController , HandleMapSearch {
     var selectedPin:MKPlacemark? = nil
     
     @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if travelPlaceStore == nil {
+            travelPlaceStore = TravelPlaceStore()
+        }
         locationManager.requestAlwaysAuthorization()
         self.mapView.mapType = MKMapType.standard
         self.mapView.userTrackingMode = MKUserTrackingMode.followWithHeading
@@ -68,8 +73,8 @@ class ViewController : UIViewController , HandleMapSearch {
             //TODO:
             //添加跳转
             performSegue(withIdentifier: "confirmTravelPlace", sender: selectedPin)
-            print(selectedPin.subAdministrativeArea!)
-            print(selectedPin)
+            //print(selectedPin.subAdministrativeArea!)
+            //print(selectedPin)
         }
     }
     
@@ -80,7 +85,7 @@ class ViewController : UIViewController , HandleMapSearch {
         }
     }
 }
-extension ViewController : MKMapViewDelegate {
+extension MapView : MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
         if annotation is MKUserLocation {
             //return nil so map view draws "blue dot" for standard user location

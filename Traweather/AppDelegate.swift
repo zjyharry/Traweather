@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //for testing use, we may claer travel data every time when it launch
+        let travelPlaceStore = TravelPlaceStore.init()
+        //travelPlaceStore.clearAllChanges()
         return true
     }
 

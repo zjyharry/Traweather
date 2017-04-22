@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class travelPlaceItem:NSObject {
+class TravelPlaceItem:NSObject,NSCoding {
     //对任意一个travel place， 我们需要的是：
     //经纬度， 到达时间 离开时间 还需要什么么？
     //var location:CLLocation
@@ -36,4 +36,15 @@ class travelPlaceItem:NSObject {
         self.placeMark = placeMark
     }
     
+    func encode(with aCoder: NSCoder) {
+        print("encodeWithCoder")
+        aCoder.encode(arriveDate, forKey: "arriveDate")
+        aCoder.encode(leaveDate, forKey: "leaveDate")
+        aCoder.encode(placeMark, forKey: "placeMark")
+    }
+    required init(coder aDecoder: NSCoder) {
+        arriveDate = aDecoder.decodeObject(forKey: "arriveDate") as! NSDate
+        leaveDate = aDecoder.decodeObject(forKey: "leaveDate") as! NSDate
+        placeMark = aDecoder.decodeObject(forKey: "placeMark") as! MKPlacemark
+    }
 }
